@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+/*Header----------*/
+
+.page-header{
+    height: auto;
+    width: 100%;
+    background-color: #0f135a;
+    border: 0;
+}
+
+.header-text{
+    color:#fafafa;
+    font-size: 3.5em;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+ 
+
+/*---------Header*/
+
+/*Intro----------*/
+
+.intro-header{
+    font-size: 2.2em;
+    margin-top: 30px;
+    
+}
+
+.intro-text{
+    font-size: 1.3em;
+}
+
+.intro-icons{
+    color:#0f135a;
+    font-size: 40px;
+    margin-left:30px;
+    margin-top: 43px;
+}
+
+/*---------Intro*/
+
+/*Contact----------*/
+
+.contact-text{
+    font-size: 1.3em;
+}
+
+.form-control{
+    width: 60%;
+    margin:0 auto;
+}
+
+.button-submit{
+    background-color:#128bee; 
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border:none;
+}
+
+.button-submit:hover{
+    background-color: #092843;
+}
+/*---------Contact*/
