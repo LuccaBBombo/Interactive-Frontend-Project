@@ -7,10 +7,12 @@
 	<title>WhereTo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
 </head>
 
 <body>
@@ -50,23 +52,37 @@
 		</div>
 	</div>
 	<!--Intro-->
+
 	<!--Map-->
-	<div class="container-fluid">
+	<div class="container-fluid map-container">
+		
+		
 		<div class="row">
 			<div id="map"></div>
 		</div>
 	</div>
 	<!--Map-->
+
 	<!--Destination Tips-->
-	<div class="container-fluid">
+	<div class="container-fluid video-container">
 		<div class="row">
 			<div class="col">
-				<h1 class="text-center">Not sure what's your next trip destination?</h1>
-				<p class="text-center">Let us help you make that decision with some videos of the best places to visit in the world.</p>
+				<h1 class="text-center video-header">Not sure what's your next trip destination?</h1>
+				<h4 class="text-center video-text">Let us help you make that decision with some videos of the best places to visit in the world.</h4>
 			</div>
+		</div>
+		<div class="row center ">
+			<iframe class="col-xs-12 col-sm-12  video-players" height="400" src="https://www.youtube.com/embed/98H5AN_vfOY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+			<iframe class="col-xs-12 col-sm-12 video-players" height="400" src="https://www.youtube.com/embed/UxlcOmeVLlE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+			<iframe class="col-xs-12 col-sm-12  video-players" height="400" src="https://www.youtube.com/embed/R7QKWgACiGA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+			<iframe class="col-xs-12 col-sm-12  video-players" height="400" src="https://www.youtube.com/embed/tZ9nkDBOs44" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
 		</div>
 	</div>
 	<!--Destination Tips-->
+
 	<!--Contact Form-->
 	<div class="container-fluid">
 		<div class="row">
@@ -90,15 +106,22 @@
 		</div>
 	</div>
 	<!--Contact Form-->
+
 	<!--Footer-->
 	<div class="container-fluid footer">
+		<div class="row">
+			
+			
+		</div>
 
 	</div>
 	<!--Footer-->
 
-	<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANBrm4SpurI_mPGsaAbRJyfrdL1ttcvZo&callback=initMap"></script>
-	<script type="text/javascript" src="assets/js/maps.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"></script>
+    <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

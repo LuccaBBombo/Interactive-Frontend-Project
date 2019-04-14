@@ -1,65 +1,111 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
+
+.center {
+  margin: auto;
+  width: 60%;
+
+}
+
 /*Header----------*/
 
-.page-header{
+.page-header {
     height: auto;
     width: 100%;
     background-color: #0f135a;
     border: 0;
 }
 
-.header-text{
-    color:#fafafa;
+.header-text {
+    color: #fafafa;
     font-size: 3.5em;
     font-family: 'Permanent Marker', cursive;
     margin-top: 15px;
     margin-bottom: 10px;
 }
- 
+
 
 /*---------Header*/
 
 /*Intro----------*/
 
-.intro-header{
+.intro-header {
     font-size: 2.2em;
     margin-top: 30px;
-    
+
 }
 
-.intro-text{
+.intro-text {
     font-size: 1.3em;
 }
 
-.intro-icons{
-    color:#0f135a;
+.intro-icons {
+    color: #0f135a;
     font-size: 40px;
-    margin-left:30px;
+    margin-left: 30px;
     margin-top: 43px;
 }
 
 /*---------Intro*/
 
+/*Map----------*/
+.map-container{
+    background-image: url("../img/city-night.jpg");
+}
+
+#map {
+    height: 500px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+/*---------Map*/
+
+/*Destinations Tips----------*/
+
+.video-header{
+    color: #fafafa;
+    margin-top: 30px;
+}
+.video-text{
+    color: #fafafa;
+}
+
+.video-container{
+    background-color: #0f135a;
+}
+
+.video-players {
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+
+
+/*---------Destinations Tips*/
+
 /*Contact----------*/
 
-.contact-text{
+.contact-text {
     font-size: 1.3em;
 }
 
-.form-control{
+.form-control {
     width: 60%;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
-.button-submit{
-    background-color:#128bee; 
+.button-submit {
+    background-color: #128bee;
     margin-top: 16px;
     margin-bottom: 16px;
-    border:none;
+    border: none;
 }
 
-.button-submit:hover{
+.button-submit:hover {
     background-color: #092843;
 }
+
 /*---------Contact*/
