@@ -2,8 +2,8 @@
 
 
 .center {
-  margin: auto;
-  width: 60%;
+    margin: auto;
+    width: 60%;
 
 }
 
@@ -30,26 +30,33 @@
 /*Intro----------*/
 
 .intro-header {
-    font-size: 2.2em;
-    margin-top: 30px;
+    font-size: 2.0em;
+    margin-top: 20px;
 
 }
 
 .intro-text {
-    font-size: 1.3em;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
 .intro-icons {
     color: #0f135a;
     font-size: 40px;
-    margin-left: 30px;
-    margin-top: 43px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.center-intro {
+    margin: auto;
+    width: 90%;
+
 }
 
 /*---------Intro*/
 
 /*Map----------*/
-.map-container{
+
+.map-container {
     background-image: url("../img/city-night.jpg");
 }
 
@@ -65,28 +72,34 @@
 
 /*Destinations Tips----------*/
 
-.video-header{
+.video-header {
     color: #fafafa;
     margin-top: 30px;
 }
-.video-text{
+
+.video-text {
     color: #fafafa;
 }
 
-.video-container{
+.video-container {
     background-color: #0f135a;
 }
 
 .video-players {
+    height: 400px;
     margin-top: 30px;
-    margin-bottom: 30px;
-   
+    margin-bottom: 40px;
+
 }
 
 
 /*---------Destinations Tips*/
 
 /*Contact----------*/
+
+.contact-header {
+    margin-top: 20px;
+}
 
 .contact-text {
     font-size: 1.3em;
@@ -98,14 +111,174 @@
 }
 
 .button-submit {
-    background-color: #128bee;
+    background-color: #038280;
     margin-top: 16px;
     margin-bottom: 16px;
     border: none;
 }
 
 .button-submit:hover {
-    background-color: #092843;
+    background-color: #044e4d;
 }
 
 /*---------Contact*/
+
+/*Footer----------*/
+
+.footer {
+    background-color: #0f135a;
+}
+
+.footer-text {
+    color: #fafafa;
+    margin-top: 10px;
+
+}
+
+/*---------Footer*/
+
+/*Media Queries----------*/
+
+@media (max-width: 766px) {
+
+    .header-text {
+        color: #fafafa;
+        font-size: 2.8em;
+        font-family: 'Permanent Marker', cursive;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .intro-header {
+        font-size: 1.7em;
+
+    }
+
+    .intro-text {
+        font-size: 1.0em;
+
+    }
+
+    .intro-icons {
+        display: none;
+    }
+
+    #map {
+        height: 300px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .video-header {
+        color: #fafafa;
+        font-size: 1.7em;
+        margin-top: 20px;
+    }
+    .video-text {
+        color: #fafafa;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+
+    .video-container {
+        background-color: #0f135a;
+    }
+
+    .video-players {
+        height: 250px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .center {
+        margin: auto;
+        width: 99%;
+
+    }
+
+    .contact-header {
+        margin-top: 15px;
+        font-size: 1.8em;
+    }
+    .contact-text {
+        font-size: 1.0em;
+    }
+
+    .form-control {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    
+    .intro-header {
+        font-size: 1.8em;
+
+    }
+
+    .intro-text {
+        font-size: 1.1em;
+
+    }
+
+    .intro-icons {
+        display: none;
+    }
+
+    #map {
+        height: 400px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .video-header {
+        color: #fafafa;
+        font-size: 1.7em;
+        margin-top: 20px;
+    }
+    .video-text {
+        color: #fafafa;
+        font-size: 0.8em;
+        margin-top: 20px;
+    }
+
+    .video-container {
+        background-color: #0f135a;
+    }
+
+    .video-players {
+        height: 250px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .center {
+        margin: auto;
+        width: 99%;
+
+    }
+
+    .contact-header {
+        margin-top: 15px;
+        font-size: 1.8em;
+    }
+    .contact-text {
+        font-size: 1.0em;
+    }
+
+    .form-control {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+}
+
+/*---------Media Queries*/
