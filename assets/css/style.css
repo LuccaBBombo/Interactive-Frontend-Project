@@ -43,13 +43,13 @@
 .intro-icons {
     color: #0f135a;
     font-size: 40px;
-    margin-left: 40px;
+    margin-right: 20px;
     margin-top: 30px;
 }
-.center-intro {
-    margin: auto;
-    width: 90%;
 
+.center-intro {
+    width: 90%;
+    margin: 0 auto;
 }
 
 /*---------Intro*/
@@ -141,6 +141,7 @@
 
 @media (max-width: 766px) {
 
+    /*Intro Queries----------*/
     .header-text {
         color: #fafafa;
         font-size: 2.8em;
@@ -160,9 +161,11 @@
     }
 
     .intro-icons {
-        display: none;
+        font-size: 30px;
     }
 
+    /*----------Intro Queries*/
+    /*Map Queries----------*/
     #map {
         height: 300px;
         width: 90%;
@@ -170,7 +173,8 @@
         margin-bottom: 50px;
         margin-top: 50px;
     }
-
+    /*----------Map Queries*/
+    /*Video Queries----------*/
     .video-header {
         color: #fafafa;
         font-size: 1.7em;
@@ -199,6 +203,8 @@
 
     }
 
+    /*----------Video Queries*/
+    /*Contact Queries----------*/
     .contact-header {
         margin-top: 15px;
         font-size: 1.8em;
@@ -212,24 +218,33 @@
         margin: 0 auto;
     }
 
+    /*----------Contact Queries*/
 }
 
 @media (min-width: 767px) and (max-width: 1024px) {
-    
+
+/*Intro Queries----------*/
+    .center-intro {
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .intro-header {
-        font-size: 1.8em;
+        font-size: 1.4em;
 
     }
 
     .intro-text {
-        font-size: 1.1em;
+        font-size: 1.0em;
 
     }
 
     .intro-icons {
-        display: none;
+        font-size: 30px;
     }
+/*----------Intro Queries*/
 
+/*Map Queries----------*/
     #map {
         height: 400px;
         width: 80%;
@@ -237,6 +252,10 @@
         margin-bottom: 50px;
         margin-top: 50px;
     }
+    
+/*----------Map Queries*/    
+
+/*Video Queries----------*/
 
     .video-header {
         color: #fafafa;
@@ -254,7 +273,7 @@
     }
 
     .video-players {
-        height: 250px;
+        height: 280px;
         margin-top: 20px;
         margin-bottom: 30px;
 
@@ -262,9 +281,13 @@
 
     .center {
         margin: auto;
-        width: 99%;
+        width: 80%;
 
     }
+    
+/*Video Queries----------*/    
+
+/*Contact Queries----------*/
 
     .contact-header {
         margin-top: 15px;
@@ -278,7 +301,7 @@
         width: 85%;
         margin: 0 auto;
     }
-
+/*----------Contact Queries*/
 }
 
 /*---------Media Queries*/
