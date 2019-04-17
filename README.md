@@ -12,8 +12,11 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * As a user, I may not be sure where I would want my next trip to be, making it helpful if some Youtube video links to get hints and ideas of nice places to visit and then using this website to gather more information. 
 * As a user, I may want to search specifics locations, such as banks or restaurants.
 * As a user, I may want to plan a arrival route, making it so I can go to the bank before going to my hotel, making it easier if I can filter for certain locations.
+* As a user, I want to be able to use a reset button to clear all input fields in the map section.
+* As a user, I may want to get in contact if I have any doubts about the website.
 
   
+
 [Desktop Mockup]
 
 [Mobile Mockup]
