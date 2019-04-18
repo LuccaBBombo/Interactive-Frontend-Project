@@ -7,12 +7,16 @@
 	<title>WhereTo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" type="text/css">
-    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-	
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+	<script type="text/javascript">
+		(function() {
+			emailjs.init("user_4XpgJTrpCYNZAoRVvVDLE");
+		})();
+	</script>
+
 </head>
 
 <body>
@@ -24,7 +28,7 @@
 			</div>
 		</div>
 	</header>
-	<!--Header-->
+
 	<!--Intro-->
 	<div class="container-fluid ">
 		<div class="row center-intro ">
@@ -42,17 +46,17 @@
 			</div>
 		</div>
 	</div>
-	<!--Intro-->
+
 
 	<!--Map-->
 	<div class="container-fluid map-container">
-		
-		
+
+
 		<div class="row">
 			<div id="map"></div>
 		</div>
 	</div>
-	<!--Map-->
+
 
 	<!--Destination Tips-->
 	<div class="container-fluid video-container">
@@ -63,16 +67,16 @@
 			</div>
 		</div>
 		<div class="row center ">
-			<iframe class="col-xs-12 col-sm-12  video-players"  src="https://www.youtube.com/embed/98H5AN_vfOY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			<iframe class="col-xs-12 col-sm-12  video-players" src="https://www.youtube.com/embed/98H5AN_vfOY" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
-			<iframe class="col-xs-12 col-sm-12 video-players"  src="https://www.youtube.com/embed/UxlcOmeVLlE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
+			<iframe class="col-xs-12 col-sm-12 video-players" src="https://www.youtube.com/embed/UxlcOmeVLlE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
 			<iframe class="col-xs-12 col-sm-12  video-players" src="https://www.youtube.com/embed/R7QKWgACiGA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
 			<iframe class="col-xs-12 col-sm-12  video-players" src="https://www.youtube.com/embed/tZ9nkDBOs44" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>
 		</div>
 	</div>
-	<!--Destination Tips-->
+
 
 	<!--Contact Form-->
 	<div class="container-fluid">
@@ -81,10 +85,10 @@
 				<h1 class="text-center contact-header">Contact Us</h1>
 				<p class="text-center contact-text">Want to get in touch? Just leave us a quick email.</p>
 				<div class="center-form">
-					<form>
+					<form onsubmit="return sendMail(this);" method: "POST">
 						<input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
-						<input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
-						<textarea rows="5" name="text-input" id="text-input" class="form-control" placeholder="Text" required></textarea>
+						<input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
+						<textarea rows="5" name="emailcontent" id="text-input" class="form-control" placeholder="Text" required></textarea>
 						<div class="form-row text-center ">
 							<div class="col">
 								<button type="submit" class="button-submit btn btn-secondary"> Send Email </button>
@@ -96,24 +100,22 @@
 			</div>
 		</div>
 	</div>
-	<!--Contact Form-->
+
 
 	<!--Footer-->
 	<div class="container-fluid footer">
 		<div class="row">
 			<div class="col">
 				<p class="footer-text text-center">Copyright &#169 WhereTo 2019</p>
-				
+
 			</div>
 		</div>
 	</div>
-	<!--Footer-->
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"></script>
-    <script src="https://unpkg.com/esri-leaflet-geocoder@2.2.13/dist/esri-leaflet-geocoder.js"></script>
-    <script src="assets/js/script.js"></script>
+
+
+	<script src="assets/js/sendEmail.js"></script>
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>
