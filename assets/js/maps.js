@@ -98,7 +98,7 @@ function onPlaceChanged() {
   var place = autocomplete.getPlace();
   if (place.geometry) {
     map.panTo(place.geometry.location);
-    map.setZoom(15);
+    map.setZoom(10);
     search();
   }
   else {
@@ -111,7 +111,10 @@ function search() {
   let poi = 'lodging'; //poi = point of interest
   clearMarkers();
   markers = [];
-
+  
+  if (document.getElementById("cafe").checked) poi = 'cafe';
+  clearMarkers();
+  markers = [];
   if (document.getElementById("museum").checked) poi = 'museum';
   clearMarkers();
   markers = [];
@@ -125,6 +128,15 @@ function search() {
   clearMarkers();
   markers = [];
   if (document.getElementById("bank").checked) poi = 'bank';
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("pharmacy").checked) poi = 'pharmacy';
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("car_rental").checked) poi = 'car_rental';
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("bus_station").checked) poi = 'bus_station';
   clearMarkers();
   markers = [];
 
