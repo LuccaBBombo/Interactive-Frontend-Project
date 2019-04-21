@@ -9,12 +9,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-	<script type="text/javascript">
-		(function() {
-			emailjs.init("user_4XpgJTrpCYNZAoRVvVDLE");
-		})();
-	</script>
+
 
 </head>
 
@@ -36,12 +31,12 @@
 				<p class="intro-text ">We are here to help you organize your trip in a simple and easy way, making sure you can enjoy most of what you're chosen destination has to offer.</p>
 			</div>
 			<div class="col-xs-10 col-sm-10 col-md-4 ">
-				<p class="intro-header "><i class="fas fa-question intro-icons"></i> How we do it?</p>
-				<p class="intro-text ">Making sure that you are able to locate various locations, bars, restaurants, hotels and more.</p>
-			</div>
-			<div class="col-xs-10 col-sm-10 col-md-4">
 				<p class="intro-header "><i class="fas fa-users intro-icons"></i>Why we do it?</p>
 				<p class="intro-text ">We do it because we know how planning a trip can be a hard and difficult task, so let us help you make it quicker and less stressful.</p>
+			</div>
+			<div class="col-xs-10 col-sm-10 col-md-4">
+				<p class="intro-header "><i class="fas fa-question intro-icons"></i> How we do it?</p>
+				<p class="intro-text ">Making sure that you are able to locate various locations, bars, restaurants, hotels and more.</p>
 			</div>
 		</div>
 	</div>
@@ -49,10 +44,10 @@
 
 	<!--Map-->
 	<div class="container-fluid map-container">
-	
+
 		<div id="controls">
 			<select id="country">
-					        <option value="all">All</option>
+					        <option value="all"selected >All</option>
 					        <option value="au">Australia</option>
 					        <option value="br">Brazil</option>
 					        <option value="ca">Canada</option>
@@ -64,13 +59,13 @@
 					        <option value="za">South Africa</option>
 					        <option value="es">Spain</option>
 					        <option value="pt">Portugal</option>
-					        <option value="us" selected>U.S.A.</option>
+					        <option value="us">U.S.A.</option>
 					        <option value="uk">United Kingdom</option>
 					      </select>
 		</div>
-			<div id="locationField">
-				<input id="autocomplete" placeholder="Enter a city" type="text" />
-			</div>
+		<div id="locationField">
+			<input id="autocomplete" placeholder="Enter a city" type="text" />
+		</div>
 		<div id="placestoggle">
 			<div id="places">
 				<input onchange="search()" type="radio" class="input-custom" id="lodging" name="option" checked="checked" />
@@ -95,17 +90,17 @@
 				<label class="input-label" for="bank">Bank</label>
 			</div>
 		</div>
-	<div class="row">
-		
-		<div class="col-xs-12 col-sm-12 col-md-8" id="map"></div>
-	
-		<div class="col-xs-10 col-sm-10 col-md-4" id="listing">
-			<table id="resultsTable">
-				<tbody id="results"></tbody>
-			</table>
+		<div class="row center-map">
+
+			<div class="col-xs-12 col-sm-12 col-md-10" id="map"></div>
+
+			<div class="col-xs-10 col-sm-10 col-md-2" id="listing">
+				<table id="resultsTable">
+					<tbody id="results"></tbody>
+				</table>
+			</div>
 		</div>
-	</div>
-	
+
 		<div style="display: none">
 			<div id="info-content">
 				<table>
@@ -132,9 +127,9 @@
 				</table>
 			</div>
 		</div>
-	
+
 	</div>
-	
+
 
 	<!--Destination Tips-->
 	<div class="container-fluid video-container">
@@ -190,11 +185,27 @@
 		</div>
 	</div>
 
+	<!-- References and runs  emailjs -->
+	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+
+	<script type="text/javascript">
+		(function() {
+			emailjs.init("user_4XpgJTrpCYNZAoRVvVDLE");
+		})();
+	</script>
+
 	<!-- Google Maps API file-->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX-QOtHBnedZEln47d_RNaU79KrHftDO8&libraries=places&callback=initMap" async defer></script>
+
+	<!--Functions and features for Google Places API. -->
 	<script type="text/javascript" src="assets/js/maps.js"></script>
+
+	<!--Clears location input and map markers when a different country is selected -->
 	<script src="assets/js/clear-input.js"></script>
+
+	<!-- Sends email when submit button is clicked -->
 	<script src="assets/js/sendEmail.js"></script>
+
 </body>
 
 </html>

@@ -106,9 +106,11 @@ function onPlaceChanged() {
   }
 }
 
-// Search for hotels in the selected city, within the viewport of the map.
+// Search for places of interest in the selected city, within the viewport of the map.
+
 function search() {
-  let poi = 'lodging'; //poi = point of interest
+  
+  let poi = 'lodging'; 
   clearMarkers();
   markers = [];
   
@@ -151,19 +153,21 @@ function search() {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
-      // Create a marker for each hotel found, and
-      // assign a letter of the alphabetic to each marker icon.
+      // Create a marker for each hotel found, and assign a letter of the alphabetic to each marker icon.
+
       for (var i = 0; i < results.length; i++) {
         var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
         var markerIcon = MARKER_PATH + markerLetter + '.png';
+        
         // Use marker animation to drop the icons incrementally on the map.
+       
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP,
           icon: markerIcon
         });
-        // If the user clicks a hotel marker, show the details of that hotel
-        // in an info window.
+        // If the user clicks a hotel marker, show the details of that location in an info window.
+
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], 'click', showInfoWindow);
         setTimeout(dropMarker(i), i * 100);
@@ -182,8 +186,8 @@ function clearMarkers() {
   markers = [];
 }
 
-// Set the country restriction based on user input.
-// Also center and zoom the map on the given country.
+// Set the country restriction based on user input and center and zoom the map on the given country.
+
 function setAutocompleteCountry() {
   var country = document.getElementById('country').value;
   if (country == 'all') {
@@ -238,8 +242,8 @@ function clearResults() {
   }
 }
 
-// Get the place details for a hotel. Show the information in an info window,
-// anchored on the marker for the hotel that the user selected.
+// Get the place details for a location, show the information in an info window anchored on the marker for the hotel that the user selected.
+
 function showInfoWindow() {
   var marker = this;
   places.getDetails({ placeId: marker.placeResult.place_id },
@@ -252,7 +256,9 @@ function showInfoWindow() {
     });
 }
 
+
 // Load the place information into the HTML elements used by the info window.
+
 function buildIWContent(place) {
   document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
     'src="' + place.icon + '"/>';
@@ -269,9 +275,9 @@ function buildIWContent(place) {
     document.getElementById('iw-phone-row').style.display = 'none';
   }
 
-  // Assign a five-star rating to the hotel, using a black star ('&#10029;')
-  // to indicate the rating the hotel has earned, and a white star ('&#10025;')
-  // for the rating points not achieved.
+  // Assign a five-star rating to the location, using a black star to indicate the rating the hotel has earned,
+  // and a white star for the rating points not achieved.
+
   if (place.rating) {
     var ratingHtml = '';
     for (var i = 0; i < 5; i++) {
@@ -289,8 +295,8 @@ function buildIWContent(place) {
     document.getElementById('iw-rating-row').style.display = 'none';
   }
 
-  // The regexp isolates the first part of the URL (domain plus subdomain)
-  // to give a short URL for displaying in the info window.
+  // The regexp isolates the first part of the URL to give a short URL for displaying in the info window.
+
   if (place.website) {
     var fullUrl = place.website;
     var website = hostnameRegexp.exec(place.website);

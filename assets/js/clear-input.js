@@ -1,8 +1,10 @@
-$(document).ready(function() {
+ $(document).ready(function() {
     
     
     $("#autocompleteId").val('');  
-    // Function for clearing out the location input when a new country is selected
+    
+    // Function for clearing out the location input when the user selects a different country
+    
     let autoComplete = document.querySelector("#autocomplete");
     let country = document.querySelector('#country');
     country.addEventListener('change', () => {
