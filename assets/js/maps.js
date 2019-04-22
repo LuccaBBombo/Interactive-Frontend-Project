@@ -58,6 +58,7 @@ var countries = {
     center: { lat: 54.8, lng: -4.6 },
     zoom: 5
   }
+
 };
 
 function initMap() {
@@ -109,11 +110,11 @@ function onPlaceChanged() {
 // Search for places of interest in the selected city, within the viewport of the map.
 
 function search() {
-  
-  let poi = 'lodging'; 
+
+  let poi = 'lodging';
   clearMarkers();
   markers = [];
-  
+
   if (document.getElementById("cafe").checked) poi = 'cafe';
   clearMarkers();
   markers = [];
@@ -139,6 +140,7 @@ function search() {
   clearMarkers();
   markers = [];
   if (document.getElementById("bus_station").checked) poi = 'bus_station';
+
   clearMarkers();
   markers = [];
 
@@ -153,20 +155,22 @@ function search() {
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       clearResults();
       clearMarkers();
-      // Create a marker for each hotel found, and assign a letter of the alphabetic to each marker icon.
+
+      // Create a marker for each location found, and assign a letter of the alphabetic to each marker icon.
 
       for (var i = 0; i < results.length; i++) {
         var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));
         var markerIcon = MARKER_PATH + markerLetter + '.png';
-        
+
         // Use marker animation to drop the icons incrementally on the map.
-       
+
         markers[i] = new google.maps.Marker({
           position: results[i].geometry.location,
           animation: google.maps.Animation.DROP,
           icon: markerIcon
         });
-        // If the user clicks a hotel marker, show the details of that location in an info window.
+
+        // If the user clicks a marker, show the details of that location in an info window.
 
         markers[i].placeResult = results[i];
         google.maps.event.addListener(markers[i], 'click', showInfoWindow);
