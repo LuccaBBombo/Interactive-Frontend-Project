@@ -10,13 +10,13 @@ function sendMail(contactForm) {
                 console.log("Sent", response);
                 
                 alert("Your message has been sent successfully");
-                document.getElementById('form').reset();
+                document.getElementById("form").reset();
             },
             function(error) {
                 console.log("Error", error);
                 
                 alert("Message was not sent");
-                document.getElementById('form').reset();
+                document.getElementById("form").reset();
             }
 
         );
