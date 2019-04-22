@@ -8,7 +8,7 @@ describe("sendMail function", function() {
             expect(sendMail).toBeDefined();
         });
     });
-    it("should return Your message has been sent successfully", function() {
+    it("should return Your message has been sent ", function() {
         let result = sendMail("Sent");
         expect(result).toBe("Your message has been sent successfully");
     });
