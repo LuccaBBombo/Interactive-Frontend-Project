@@ -68,9 +68,9 @@
 		</form>
 		<div id="placestoggle">
 			<div id="places">
-				<input onchange="search()" type="radio" class="input-custom" id="lodging" name="option" checked="checked" />
+				<input onchange="search()" type="radio" class="input-custom" id="lodging" name="option"/>
 				<label class="input-label" for="lodging">Hotel</label>
-				<input onchange="search()" type="radio" class="input-custom" id="pharmacy" name="option" checked="checked" />
+				<input onchange="search()" type="radio" class="input-custom" id="pharmacy" name="option"/>
 				<label class="input-label" for="pharmacy">Pharmacy</label>
 				<input onchange="search()" type="radio" class="input-custom" id="museum" name="option" />
 				<label class="input-label" for="museum">Museum</label>
@@ -84,7 +84,7 @@
 				<label class="input-label" for="airport">Airport</label>
 				<input onchange="search()" type="radio" class="input-custom" id="car_rental" name="option" />
 				<label class="input-label" for="car_rental">Car Rental</label>
-				<input onchange="search()" type="radio" class="input-custom" id="bus_station" name="option" checked="checked" />
+				<input onchange="search()" type="radio" class="input-custom" id="bus_station" name="option"/>
 				<label class="input-label" for="bus_station">Bus Stations</label>
 				<input onchange="search()" type="radio" class="input-custom" id="bank" name="option" />
 				<label class="input-label" for="bank">Bank</label>
@@ -158,7 +158,7 @@
 				<h1 class="text-center contact-header">Contact Us</h1>
 				<p class="text-center contact-text">Want to get in touch? Just leave us a quick email.</p>
 				<div class="center-form">
-					<form onsubmit="return sendMail(this);" method: "POST">
+					<form id="contact-form" onsubmit="return sendMail(this);" method: "POST">
 						<input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
 						<input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
 						<textarea rows="5" name="emailcontent" id="text-input" class="form-control" placeholder="Text" required></textarea>
@@ -199,12 +199,17 @@
 
 	<!--Functions and features for Google Places API. -->
 	<script type="text/javascript" src="assets/js/maps.js"></script>
-
+    
+    <!--Loads Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	
 	<!--Clears location input and map markers when a different country is selected -->
 	<script src="assets/js/clear-input.js"></script>
 
 	<!-- Sends email when submit button is clicked -->
 	<script src="assets/js/sendEmail.js"></script>
+	
+	
 
 </body>
 

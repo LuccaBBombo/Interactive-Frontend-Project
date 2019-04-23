@@ -1,9 +1,9 @@
-sendMail = function(message) {
+function sendMail(message) {
     
     if(message === "Sent") {
-        return "Your message has been sent";
+       window.alert("Your message has been sent") ;
     }
     else if(message === "Error") {
-        return "Message was not sent";
+        window.alert("Your message has not been sent") ;
     }
 };

@@ -58,8 +58,9 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 ### Testing
 
 * The HTML and CSS files were tested by using the W3C Mark Validator Service.
-* To test the responsiveness of the website in phones, tablets and desktops screens, I was used the Chrome Developer Tools.
+* To test the responsiveness of the website in phones, tablets and desktops screens, I was used the Chrome Developer Tools, verifiynd how the site reacted in different screen sizes.
 * The JavaScript files were tested using JSLint.
+* The test for the Youtube video were done manually, testing if they would load and play correctly.The test was made by playing each one separately and verifying they worked.
 * To test that the emails were being sent correctly I used Jasmine to automate a test.
 
 #### User Stories
@@ -67,13 +68,15 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * As a user, I may not be sure where I would want my next trip to be, making it helpful if some Youtube video links to get hints and ideas of nice places to visit and then using this website to gather more information. 
 * As a user, I may want to search specifics locations, such as restaurants, car rental companies, making it easier for me to plan my trip.
 * As a user, I want to be able to use a reset button to clear all input fields in the map section.
-* As a user, I may want to get in contact if I have any doubts about the website.
+* As a user, I may want to get in contact if I have any doubts about the website or get in contact with the developer.
 
 #### Bugs
 
 * Had issues with the markers not clearing after selecting a new country or city, fixed by adding the clearMarkers function.
 * The email input bar in the contact form was accepting texts without the addition of "@", fixed by changing the input type to "email".
 * Issues with the Jasmine testing for the contact form.
+* Had problems with the alert message not showing when the contact form was submitted.Fixed by removing the "console.log" from inside the sendMail function.
+* Had issues of the contact form not resetting after the form was submitted fixed it by assigning the "getElementById" inside to the reset function.
 
 
 ### Deployment
@@ -81,7 +84,7 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 The project was developed using the Cloud9 IDE. With every new feature or changes made to the code, the files where added and commited to the local repository. After that, pushed and added to my Github repositories. The project was deployed using GitHub pages.
 
 
-#### To locally run the website, simply click the link presented below
+#### To run the website, simply click the link presented below
 
 ### Credits
 

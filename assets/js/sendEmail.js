@@ -7,19 +7,17 @@ function sendMail(contactForm) {
         })
         .then(
             function(response) {
-                console.log("Sent", response);
+                alert("Your message has been sent");
                 
-                alert("Your message has been sent successfully");
-                document.getElementById("form").reset();
+                document.getElementById("contact-form").reset();
             },
             function(error) {
-                console.log("Error", error);
-                
                 alert("Message was not sent");
-                document.getElementById("form").reset();
+                
+                document.getElementById("contact-form").reset();
             }
 
         );
-// Blocks from loading a new page
-     return false; 
+    //blocks from loading a new page    
+ return false;  
 }

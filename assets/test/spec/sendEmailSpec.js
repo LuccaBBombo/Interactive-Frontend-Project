@@ -1,6 +1,6 @@
 describe("sendMail", function() {
 
-    beforeEach(function() {
+    beforeEach(function() { spyOn(window, 'alert');
         let sendmail = new sendMail();
     });
     describe("sendMail tests", function() {
@@ -10,10 +10,15 @@ describe("sendMail", function() {
     });
     it("should return Your message has been sent ", function() {
         let result = sendMail("Sent");
-        expect(result).toBe("Your message has been sent successfully");
+        expect(window.alert).toHaveBeenCalledWith('Your message has been sent');
     });
     it("should return Message was not sent", function() {
         let result = sendMail("Error");
-        expect(result).toBe("Message was not sent");
+         expect(window.alert).toHaveBeenCalledWith("Message was not sent");
     });
 });
+
+
+
+
+
