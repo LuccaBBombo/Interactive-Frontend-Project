@@ -152,7 +152,7 @@ function search() {
       clearResults();
       clearMarkers();
 
-      // Create a marker for each hotel found, and assign a letter of the alphabetic to each marker icon.
+      // Create a marker for each location found, and assign a letter of the alphabetic to each marker icon.
 
       for (var i = 0; i < results.length; i++) {
         var markerLetter = String.fromCharCode('A'.charCodeAt(0) + (i % 26));

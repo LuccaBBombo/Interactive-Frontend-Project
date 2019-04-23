@@ -82,6 +82,12 @@ table {
     font-size: 12px;
 }
 
+#reset-button{
+    background-color: 
+    font-weight:bold;
+    border-radius: 3px;
+}
+
 #listing {
     height: 500px;
     margin-top: 25px;

@@ -11,7 +11,7 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * As a user, I may not be sure where I would want my next trip to be, making it helpful if some Youtube video links to get hints and ideas of nice places to visit and then using this website to gather more information. 
 * As a user, I may want to search specifics locations, such as restaurants, car rental companies, making it easier for me to plan my trip.
 * As a user, I want to be able to use a reset button to clear all input fields in the map section.
-* As a user, I may want to get in contact if I have any doubts about the website.
+* As a user, I may want to get in contact if I have any doubts about the website or get in contact with the developer.
 
 ### Features
 
@@ -56,11 +56,14 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
   * The project uses jasmine to perform automated testing.
 
 ### Testing
+
 * The HTML and CSS files were tested by using the W3C Mark Validator Service.
 * To test the responsiveness of the website in phones, tablets and desktops screens, I was used the Chrome Developer Tools.
 * The JavaScript files were tested using JSLint.
+* To test that the emails were being sent correctly I used Jasmine to automate a test.
 
 #### User Stories
+
 * As a user, I may not be sure where I would want my next trip to be, making it helpful if some Youtube video links to get hints and ideas of nice places to visit and then using this website to gather more information. 
 * As a user, I may want to search specifics locations, such as restaurants, car rental companies, making it easier for me to plan my trip.
 * As a user, I want to be able to use a reset button to clear all input fields in the map section.
@@ -72,15 +75,17 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * The email input bar in the contact form was accepting texts without the addition of "@", fixed by changing the input type to "email".
 * Issues with the Jasmine testing for the contact form.
 
+
 ### Deployment
 
-The project was developed using the Cloud9 IDE. With every new feature or changes made to the code, the files where added and commited to the local repository. After that, pushed and added to my Github repositories. It was deployed using the GitHub pages.
+The project was developed using the Cloud9 IDE. With every new feature or changes made to the code, the files where added and commited to the local repository. After that, pushed and added to my Github repositories. The project was deployed using GitHub pages.
 
-#### To locally run the code, simply click the link presented below
+
+#### To locally run the website, simply click the link presented below
 
 ### Credits
 
-The base code used for the map was acquired from Google Maps Places library.
+The base code used for the map was acquired from Google Developers documentation.
 
 ##### Media
 
@@ -88,4 +93,5 @@ The videos used in the weboage where embeded from Youtube.
 The image used for the map container background was found on Google images.
 
 ##### Acknowledgements
+
 I would like to thank the Code Institute students, mentor and tutors.
