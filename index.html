@@ -64,13 +64,15 @@
 		</div>
 		<form id="locationField">
 			<input id="autocomplete" placeholder="Enter a city" type="text" />
-			<input id="reset-button" type="reset" value="Reset">
 		</form>
+		<div class="row">
+			<button id="reset-button" type="button">Reset Map</button>
+		</div>
 		<div id="placestoggle">
 			<div id="places">
-				<input onchange="search()" type="radio" class="input-custom" id="lodging" name="option"/>
+				<input onchange="search()" type="radio" class="input-custom" id="lodging" name="option" checked />
 				<label class="input-label" for="lodging">Hotel</label>
-				<input onchange="search()" type="radio" class="input-custom" id="pharmacy" name="option"/>
+				<input onchange="search()" type="radio" class="input-custom" id="pharmacy" name="option" />
 				<label class="input-label" for="pharmacy">Pharmacy</label>
 				<input onchange="search()" type="radio" class="input-custom" id="museum" name="option" />
 				<label class="input-label" for="museum">Museum</label>
@@ -84,7 +86,7 @@
 				<label class="input-label" for="airport">Airport</label>
 				<input onchange="search()" type="radio" class="input-custom" id="car_rental" name="option" />
 				<label class="input-label" for="car_rental">Car Rental</label>
-				<input onchange="search()" type="radio" class="input-custom" id="bus_station" name="option"/>
+				<input onchange="search()" type="radio" class="input-custom" id="bus_station" name="option" />
 				<label class="input-label" for="bus_station">Bus Stations</label>
 				<input onchange="search()" type="radio" class="input-custom" id="bank" name="option" />
 				<label class="input-label" for="bank">Bank</label>
@@ -199,17 +201,17 @@
 
 	<!--Functions and features for Google Places API. -->
 	<script type="text/javascript" src="assets/js/maps.js"></script>
-    
-    <!--Loads Jquery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	
+
+	<!--Loads Jquery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 	<!--Clears location input and map markers when a different country is selected -->
 	<script src="assets/js/clear-input.js"></script>
 
 	<!-- Sends email when submit button is clicked -->
 	<script src="assets/js/sendEmail.js"></script>
-	
-	
+
+
 
 </body>
 

@@ -83,8 +83,12 @@ table {
 }
 
 #reset-button{
-    background-color: 
+    background-color: #484a76;
+    margin: 15px auto;
+    margin-bottom: 0px;
+    color:#fafafa;
     font-weight:bold;
+    border: groove;
     border-radius: 3px;
 }
 
@@ -117,6 +121,7 @@ table {
 #autocomplete {
     width: 200px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 #placestoggle {
@@ -126,7 +131,7 @@ table {
 }
 
 #places {
-    margin-top: 35px;
+    margin-top: 25px;
     display: inline-block;
 }
 
@@ -280,6 +285,7 @@ table {
 
     /*Map Queries----------*/
    
+   
     .center-map {
         margin: 0 auto;
         
@@ -327,7 +333,8 @@ table {
 
     }
 
-    /*----------Video Queries*/
+
+   
     /*Contact Queries----------*/
     .contact-header {
         margin-top: 15px;

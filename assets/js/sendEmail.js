@@ -12,7 +12,7 @@ function sendMail(contactForm) {
                 document.getElementById("contact-form").reset();
             },
             function(error) {
-                alert("Message was not sent");
+                alert("Message has not been sent");
                 
                 document.getElementById("contact-form").reset();
             }

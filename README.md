@@ -57,9 +57,9 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 
 ### Testing
 
-* The HTML and CSS files were tested by using the W3C Mark Validator Service.
+* The HTML and CSS files were tested by using the W3C Mark Validator Service by direct input of the files on the validator.
 * To test the responsiveness of the website in phones, tablets and desktops screens, I was used the Chrome Developer Tools, verifiynd how the site reacted in different screen sizes.
-* The JavaScript files were tested using JSLint.
+* The JavaScript files were tested using JSLint by direct input of the files on the validator.
 * The test for the Youtube video were done manually, testing if they would load and play correctly.The test was made by playing each one separately and verifying they worked.
 * To test that the emails were being sent correctly I used Jasmine to automate a test.
 
@@ -86,13 +86,13 @@ The project was developed using the Cloud9 IDE. With every new feature or change
 
 #### To run the website, simply click the link presented below
 
-### Credits
+#### Credits
 
 The base code used for the map was acquired from Google Developers documentation.
 
 ##### Media
 
-The videos used in the weboage where embeded from Youtube.
+The videos used in the webpage where embeded from Youtube.
 The image used for the map container background was found on Google images.
 
 ##### Acknowledgements
