@@ -83,6 +83,8 @@ The project was developed using the Cloud9 IDE. With every new feature or change
 
 #### To run the website, simply click the link presented below
 
+[Deployed website] (https://luccabbombo.github.io/Interactive-Frontend-Project/)
+
 #### Credits
 
 The base code used for the map was acquired from Google Developers documentation.
