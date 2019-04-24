@@ -1,4 +1,5 @@
 function resetMap(){
-    document.getElementById("autocomplete").value="";
+    
+    document.getElementById("locationField").reset();
     
 }
