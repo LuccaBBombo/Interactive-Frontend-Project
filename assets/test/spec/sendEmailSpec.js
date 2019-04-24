@@ -14,7 +14,7 @@ describe("sendMail", function() {
     });
     it("should return Message was not sent", function() {
         let result = sendMail("Error");
-         expect(window.alert).toHaveBeenCalledWith("Message was not sent");
+         expect(window.alert).toHaveBeenCalledWith("Your message has not been sent");
     });
 });
 
