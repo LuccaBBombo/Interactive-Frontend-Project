@@ -15,5 +15,4 @@ function resetMap() {
     }
     clearResults();
     clearMarkers();
-
 }

@@ -74,8 +74,8 @@ function initMap() {
     content: document.getElementById('info-content')
   });
 
-  // Create the autocomplete object and associate it with the UI input control.
-  // Restrict the search to the default country, and to place type "cities".
+  // Create the autocomplete object and associate it with the UI input control. Restrict the search to place type "cities".
+
   autocomplete = new google.maps.places.Autocomplete(
     /** @type {!HTMLInputElement} */
     (
@@ -106,9 +106,10 @@ function onPlaceChanged() {
 }
 
 // Search for hotels in the selected city, within the viewport of the map.
+//poi = point of interest
 
 function search() {
-  let poi = 'lodging'; //poi = point of interest
+  let poi = 'lodging';
   clearMarkers();
   markers = [];
   if (document.getElementById("cafe").checked) poi = 'cafe';
@@ -139,7 +140,6 @@ function search() {
 
 
   let search = {
-
     bounds: map.getBounds(),
     types: [poi]
   };
