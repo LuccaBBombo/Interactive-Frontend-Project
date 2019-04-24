@@ -1,4 +1,4 @@
-Lucas### Interactive Frontend Development Milestone Project  
+### Interactive Frontend Development Milestone Project  
 
 WhereTo is a website that was designed to help people to plan trips by making it easy and simple. With a map interactive map, you can search for places such as hotels, restaurants and bars. Making it a great helper for when you are planning your next trip, making sure are able to choose the best spots to visit and arrange accommodation without any unwanted surprises.
 
@@ -62,7 +62,7 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * The JavaScript files were tested using JSLint by direct input of the files on the validator.
 * The test for the Youtube video was done manually, testing if they would load and play correctly. The test was made by playing each one separately and verifying they worked.
 * To test that the emails were being sent correctly I used Jasmine to automate a test.
-* To make sure the reset button was functioning properly, I tested how it would react one it was clicked when displaying search results for all countries. Making sure the input field for the city would be cleared and the map would clear all markers and zoom out to the country selected.
+* To make sure the reset button was functioning properly, I tested how it would react once it was clicked when displaying search results for all separate countries. Making sure the input field for the city would be cleared, the map would clear all markers and zoom out to the country selected.
 
 #### User Stories
 
@@ -75,7 +75,6 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 
 * Had issues with the markers not clearing after selecting a new country or city, fixed by adding the clearMarkers function.
 * The email input bar in the contact form was accepting texts without the addition of "@", fixed by changing the input type to "email".
-* Issues with the Jasmine testing for the contact form.
 * Had problems with the alert message not showing when the contact form was submitted. Fixed by removing the "console.log" from inside the sendMail function.
 * Had issues of the contact form not resetting after the form was submitted fixed it by assigning the "getElementById" inside to the reset function.
 
