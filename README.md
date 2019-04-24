@@ -1,10 +1,10 @@
 ### Interactive Frontend Development Milestone Project  
 
-WhereTo is a website that was designed to help people to plan trips by making it easy and simple. With a map interactive map, you can search for places such as hotels, restaurants and bars. Making it a great helper for when you are planning your next trip, making sure are able to choose the best spots to visit and arrange accommodation without any unwanted surprises.
+WhereTo is a website that was designed to help people to plan trips by making it easy and simple. With a map interactive map, you can search for places such as hotels, restaurants, and bars. Making it a great helper for when you are planning your next trip, making sure are able to choose the best spots to visit and arrange accommodation without any unwanted surprises.
 
 ### UX
 
-WhereTo is for people who are looking for a easy way to plan there trips to anywhere in the world, letting them choose a country, a city input bar and a location filter, allowing them to select between different locations, such as hotels, bars, restaurants, all with useful information being displayed in an intuitive and easy manner.
+WhereTo is for people who are looking for a easy way to plan there trips to anywhere in the world, letting them choose a country, a city input bar, and a location filter, allowing them to select between different locations, such as hotels, bars, restaurants, all with useful information being displayed in an intuitive and easy manner.
 
 #### User Stories
 
@@ -17,7 +17,7 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 
 * The project allows people that want to plan a trip to use a map where they can choose a destination and within the city chosen, to find certain key locations, making it a simple and easy way to help them plan their vacation.
 * The project has Youtube videos that show people who haven't decided where to go, the best travel destinations in various continents.
-* The project has a contact form that can be used by users to get in contact with the developer, to ask questions, report bugs or for companies looking to advertise their own websites within the WhereTo page.
+* The project has a contact form that can be used by users to get in contact with the developer, to ask questions, report bugs or for companies looking to advertise their own websites within the WhereTo page. After pressing the send email button, an alert will appear on the window, telling the user if the form was sent successfully or not.
 
 ### Future features 
 
@@ -58,7 +58,7 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * To test the responsiveness of the website in phones, tablets, and desktops screens, I was used the Chrome Developer Tools, verifying how the site reacted in different screen sizes.
 * The JavaScript files were tested using JSLint by direct input of the files on the validator.
 * The test for the Youtube video was done manually, testing if they would load and play correctly. The test was made by playing each one separately and verifying they worked.
-* To test that the emails were being sent correctly I filled the form sent several emails to make sure it was working.
+* To test that the emails were being sent correctly I filled the form sent several emails to make sure it was working, verifying if the alert box would pop up to inform the user if the form had been sent or not.
 * To make sure the reset button was functioning properly, I tested how it would react once it was clicked when displaying search results for all separate countries. Making sure the input field for the city would be cleared, the map would clear all markers and zoom out to the country selected.
 
 #### User Stories
