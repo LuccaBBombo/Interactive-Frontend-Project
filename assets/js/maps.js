@@ -91,8 +91,8 @@ function initMap() {
     'change', setAutocompleteCountry);
 }
 
-// When the user selects a city, get the place details for the city and
-// zoom the map in on the city.
+// When the user selects a city, get the place details for the city and zoom the map in on the city.
+
 function onPlaceChanged() {
   var place = autocomplete.getPlace();
   if (place.geometry) {
@@ -106,6 +106,7 @@ function onPlaceChanged() {
 }
 
 // Search for hotels in the selected city, within the viewport of the map.
+
 function search() {
   let poi = 'lodging'; //poi = point of interest
   clearMarkers();
@@ -117,9 +118,6 @@ function search() {
   clearMarkers();
   markers = [];
   if (document.getElementById("restaurant").checked) poi = 'restaurant';
-  clearMarkers();
-  markers = [];
-  if (document.getElementById("pharmacy").checked) poi = 'pharmacy';
   clearMarkers();
   markers = [];
   if (document.getElementById("bar").checked) poi = 'bar';
@@ -257,6 +255,7 @@ function showInfoWindow() {
 
 
 // Load the place information into the HTML elements used by the info window.
+
 function buildIWContent(place) {
   document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
     'src="' + place.icon + '"/>';
