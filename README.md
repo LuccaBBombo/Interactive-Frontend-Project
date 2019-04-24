@@ -51,9 +51,6 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
     
   * The project uses Google Maps Places library enables the website to search for places and present information about them.
  
-* [Jasmine ](https://jasmine.github.io/ "Jasmine")  
- 
-  * The project uses jasmine to perform automated testing.
 
 ### Testing
 
@@ -61,7 +58,7 @@ WhereTo is for people who are looking for a easy way to plan there trips to anyw
 * To test the responsiveness of the website in phones, tablets, and desktops screens, I was used the Chrome Developer Tools, verifying how the site reacted in different screen sizes.
 * The JavaScript files were tested using JSLint by direct input of the files on the validator.
 * The test for the Youtube video was done manually, testing if they would load and play correctly. The test was made by playing each one separately and verifying they worked.
-* To test that the emails were being sent correctly I used Jasmine to automate a test.
+* To test that the emails were being sent correctly I filled the form sent several emails to make sure it was working.
 * To make sure the reset button was functioning properly, I tested how it would react once it was clicked when displaying search results for all separate countries. Making sure the input field for the city would be cleared, the map would clear all markers and zoom out to the country selected.
 
 #### User Stories
