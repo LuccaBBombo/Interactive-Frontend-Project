@@ -18,6 +18,7 @@ function sendMail(contactForm) {
             }
 
         );
-    //blocks from loading a new page    
+
+//blocks from loading a new page    
  return false;  
 }

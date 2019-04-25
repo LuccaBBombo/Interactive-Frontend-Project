@@ -1,7 +1,9 @@
 function resetMap() {
 
+// clears the inout field for the cities
     document.getElementById("locationField").reset();
 
+// makes the map zoom out on the country selected and clears all markers
     var country = document.getElementById('country').value;
     if (country == 'all') {
         autocomplete.setComponentRestrictions({ 'country': [] });
